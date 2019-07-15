@@ -79,6 +79,9 @@ public final class Mapping {
     }
 
     public int getLineNumber() {
+      if (lineNumber < 0) {
+        new Exception();
+      }
       return lineNumber;
     }
 
